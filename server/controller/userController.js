@@ -1,4 +1,5 @@
 import User from "../modal/user-schema.js";
+
 export const userSignup = async (req, res) => {
   try {
     const exist = await User.findOne({ username: req.body.username });
